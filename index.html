@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 06 HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AULA 06 HTML e CSS</h1>
+    <p>Aulas de Front com a professora Magna</p>
+    <button>Saiba mais</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#artigo">Artigo</a></li>
+        <li><a href="#produto">Produto</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#tabela">Tabela</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div>
+        <article id="artigo">
+            <h2>1. Artigo</h2>
+            <p>Resumo de Matinhas: Matinhas é um município brasileiro localizado na Região Metropolitana de Campina Grande, 
+                estado da Paraíba. Sua população em 2020 foi estimada pelo IBGE em 4.515 habitantes.</p>
+        </article>
+
+        <section id="produto">
+    <h2>Produto</h2>
+
+    <figure>
+        <picture>
+            <source media="(max-width: 50px)"
+                    srcset="imagens/produto.jpeg">
+
+            <img src="imagens/produto.jpeg"
+                 alt="Caixa de laranjas">
+        </picture>
+
+        <figcaption>Laranjas R$ 25,00 - caixa</figcaption>
+    </figure>
+</section>
+
+        <section id="cadastro">
+            <h2>3. Cadastro</h2>
+            <form>
+                <fieldset>
+                    <legend>Preencha para comprar uma caixa de laranjas</legend>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" required>
+
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" required>
+
+                    <button>Cadastrar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="tabela">
+            <h2>4. Gastos para produzir</h2>
+            <div class="tabela">
+                <table>
+                    <caption>Gastos do mês</caption>
+                    <thead>
+                        <tr><th>Despesa</th><th>Valor</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Energia</td><td>R$ 80</td></tr>
+                        <tr><td>mão de obra</td><td>R$ 1.600</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><th>Total</th><th>R$ 1.680</th></tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>5. Vídeo</h2>
+            <video controls>
+                <source src="videos/Chamada - Minha Paraíba Matinhas - Festa da Laranja(720P_HD).mp4" type="video/mp4">
+                <track src="legendas.vtt" kind="subtitles"
+                       srclang="pt" label="Português">
+            </video>
+        </section>
+
+
+        <section>
+            <h2>7. Promoção</h2>
+            <p>Confira nossas laranjas!</p>
+            <button>Comprar</button>
+        </section>
+
+        <section id="galeria">
+            <h2>8. Galeria</h2>
+            <div class="galeria">
+                <figure>
+                    <img src="imagens/fdl.webp" alt="festa da laranja">
+                    <figcaption>festa da laranja</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/matinh.jpg" alt="Matinhas">
+                    <figcaption>Matinhas</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>9. Perguntas frequentes</h2>
+            <p><a href="#p1">O nde fica Matinhas?</a></p>
+            <p><a href="#p2">O que é laranja</a></p>
+
+            <article id="p1" class="pergunta">
+                <h3>Onde fica Matinhas?</h3>
+                <p>Matinhas é um município brasileiro localizado na Região Metropolitana de Campina Grande.</p>
+            </article>
+            <article id="p2" class="pergunta">
+                <h3>O que é laranja?</h3>
+                <p>É uma fruta cítrica conhecida por seu sabor doce e ácido.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>10. Organização</h2>
+            <p class="destaque">Este texto usa uma classe CSS.</p>
+        </section>
+    </div>
+
+    <aside>
+        <h2>Sobre</h2>
+        <p>Matinhas é um charmoso município brasileiro no estado da Paraíba, amplamente conhecido como a 
+            "Capital da Laranja" ou "Terra da Tangerina". Localizada na Região Metropolitana de Campina Grande — 
+            a apenas 24 km de distância da Rainha da Borborema e a cerca de 145 km da capital João Pessoa —, a 
+            cidade repousa a mais de 500 metros de altitude na exuberante microrregião do Brejo Paraibano. Com 
+            uma população estimada em aproximadamente 4.700 habitantes, o destino se destaca pelo clima ameno, 
+            belas paisagens rurais, turismo ecológico e forte tradição na citricultura.
+           </p>
+    
+            <p>🍊 Festivais e Rotas Culturais
+                <br>
+
+            • Festival Nacional da Tangerina (Festa da Laranja): É o maior evento cultural e econômico do município. Realizado tradicionalmente no pavimentado Parque da Laranja, atrai milhares de visitantes com grandes shows nacionais, feiras agrícolas e produtos derivados da fruta.
+            • Rota Cultural Caminhos do Frio: Matinhas integra este consagrado circuito do Brejo paraibano que ocorre nos meses de inverno (julho a setembro). A cidade se movimenta com oficinas, gastronomia regional, trilhas e apresentações artísticas que celebram a identidade nordestina.
+            </p>
+
+            <p>🌿 Ecoturismo e Natureza 
+                <br>
+
+            • Cachoeira do Pinga: Situada no Sítio Jurema, a cerca de 3 km do centro urbano, conta com quedas que variam de 3 a 10 metros de altura formadas pelo Rio Mamanguape. O cenário cercado de mata é ideal para banhos revigorantes e trilhas, operando com melhor volume d'água no período chuvoso (maio a setembro).
+            • Cachoeira do Altar: Também localizada na zona rural (Sítio Jurema), impressiona os amantes de aventura com uma imponência de aproximadamente 50 metros de queda livre, atraindo praticantes de ecotrilhas e rapel.
+            </p>
+
+            <p>🏛️ Tradição e História Rural
+                <br>
+            • Casas de Farinha: A produção artesanal de farinha de mandioca é uma tradição secular mantida por famílias locais (como no Sítio Chã do Bálsamo), onde é possível vivenciar de perto esse processo histórico.
+            • Capelinha de São Severino dos Ramos: Localizada no Sítio Joá, carrega forte mística religiosa e valor histórico, tendo servido no passado como abrigo para o bando do famoso cangaceiro Antônio Silvino.
+            • Engenho Eufrásio de Arruda Câmara: Uma joia da arquitetura do século XIX situada no Sítio Sapé, que reconta as origens agrícolas da região.
+            </p>
+        </p>
+    </aside>
+</main>
+
+<footer>
+    <p>Fim do projeto</p>
+</footer>
+
+</body>
+</html>

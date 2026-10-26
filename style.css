@@ -1,0 +1,103 @@
+
+/* Configuração geral */
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #eee;
+}
+
+header, footer {
+    background: #d77b0b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+a {
+    color: #003366;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+section, article, aside {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    background: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+img, video {
+    max-width: 400px;
+}
+
+figure:hover img {
+    transform: scale(1.03);
+}
+
+img {
+    transition: 0.3s;
+}
+
+input:focus-visible {
+    outline: 2px solid blue;
+}
+
+.tabela {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 8px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+figcaption {
+    padding: 5px;
+}
+
+.pergunta:target {
+    background: rgb(247, 166, 52);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
